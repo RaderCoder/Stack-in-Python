@@ -9,8 +9,8 @@ if __name__ == "__main__":
     tempstack.push(4)
     tempstack.push(8)
 
-    print("\n Size: {}".format(tempstack.size()))
-    print(tempstack.head.value)
+    print("\nSize: {}".format(tempstack.size()))
+    # print(tempstack.head.value)
 
     print(tempstack)
     

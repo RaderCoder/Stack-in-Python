@@ -5,7 +5,10 @@ class Stack(LinkedList.LinkedList):
         super().__init__(head)
 
     def pop(self):
+        top_value = self.head.value
         self.delete_node(self.head.value)
+
+        return top_value
 
     def top(self):
         return self.head
