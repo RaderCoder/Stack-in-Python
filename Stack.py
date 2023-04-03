@@ -7,6 +7,21 @@ class Stack(LinkedList.LinkedList):
     def pop(self):
         self.delete_node(self.head.value)
 
+    def top(self):
+        return self.head
+    
+    def is_empty(self):
+        return False if self.head.value else True
+    
+    def size(self):
+        count = 0
+        temp = self.head
+        while temp:
+            count += 1
+            temp = temp.next
+
+        return count
+
     def __repr__(self):
         temp = self.head
         repstr = "Type: Stack\n\n"

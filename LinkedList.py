@@ -8,9 +8,12 @@ class LinkedList:
         self.head = Node(head)
 
     def push(self, new_data):
-        new_node = Node(new_data)
-        new_node.next = self.head
-        self.head = new_node
+        if self.head.value:
+            new_node = Node(new_data)
+            new_node.next = self.head
+            self.head = new_node
+        else:
+            self.head.value = new_data
 
     def find_value(self,value):
         temp = self.head
