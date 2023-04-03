@@ -1,0 +1,3 @@
+### Stack Implementation in Python
+
+This is going to be a simple stack implementation in Python. I am going to use Linked Lists instead of arrays as lists in python are already a dynamic data structure. Also Linked Lists extend to stacks pretty well depending on how the methods of the list are constructed. Notice that the pop method calls the delete_node method and we don't even need to create a push method.
