@@ -9,9 +9,10 @@ class Stack(LinkedList.LinkedList):
 
     def __repr__(self):
         temp = self.head
-        repstr = ""
+        repstr = "Type: Stack\n\n"
 
         while temp:
-            repstr = repstr + str(temp.value) + "\n" + "__"
+            repstr = repstr + str(temp.value) + "\n" + "__" + "\n"
+            temp = temp.next
 
         return repstr
